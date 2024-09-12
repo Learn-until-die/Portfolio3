@@ -1,0 +1,129 @@
+:root{
+  --light-pink:#d38c8c;
+  --green:rgb(9, 223, 134);
+  --red:rgb(245, 109, 109);
+  --white:rgb(255, 255, 255);
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-image: url("nature.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: transparent;
+  backdrop-filter: blur(15px);
+  font-size: 10px;
+}
+.section1{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:0rem 12rem ;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  position: relative;
+  
+}
+.txt{
+  width: 50%;
+  height: 100%; 
+}
+.txt h1{
+  font-size: 4.5rem;
+  margin-bottom: 2rem;
+  /* text-align: center; */
+  font-weight: 300;
+  padding-top:7rem;
+  text-transform: uppercase;
+}
+.txt p{
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+ 
+}
+.image{
+  width: 50%;
+  height: 100%;
+  backdrop-filter: blur(20px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.picture{
+  width:20rem;
+  height: 20rem;
+  background-image: url("Mahim.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 2rem;
+}
+
+.btn{
+width: 10rem;
+height: 3rem;
+text-transform: uppercase;
+border-radius: 1rem;
+background-color: transparent;
+border: 1px solid var(--white);
+margin-left: 2rem;
+cursor: pointer;
+box-shadow: inset 38px 29px 23px -11px rgba(255, 255, 255, 0.3),
+ 3px 3px 5px rgba(0, 0, 0);
+ color: var(--white);
+ font-size: 1rem;
+ font-weight: 600;
+}
+.btn:active{
+  width: 9.8rem;
+ height: 2.8rem;
+  border: 1px solid var(--white);
+  background:linear-gradient(to left,var(--light-pink) 25%,var(--white));
+  font-weight: 700;
+  color: var(--red);
+}
+
+
+/* Written navigation bar *//* Written navigation bar *//* Written navigation bar *//* Written navigation bar *//* Written navigation bar *//* Written navigation bar */
+.nav{
+  width: 40vw;
+  height: 8vh;
+  position: fixed;
+  bottom: 0;
+  backdrop-filter: blur(30px);
+  border: 1px solid var(--light-pink);
+  box-shadow: inset 38px 29px 23px -11px rgba(255, 255, 255, 0.3),
+ 3px 3px 5px rgba(0, 0, 0);
+  border-radius: 10px;
+  bottom: 5px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  display:flex;
+  align-items: center;
+}
+.nav ul {
+  display: flex;
+  margin:0 auto ;
+  
+}
+.nav ul li{
+  list-style-type:none;
+  text-transform: uppercase;
+  padding: 0 1rem;
+}
+.nav ul li a{
+  text-decoration: none;
+  cursor: pointer;
+}
+.nav ul li a:visited{
+  color: var(--red);
+}
+
+
+
+
+

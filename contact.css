@@ -1,0 +1,130 @@
+:root{
+  --light-pink:#d38c8c;
+  --green:rgb(9, 223, 134);
+  --red:rgb(245, 109, 109);
+  --white:rgb(255, 255, 255);
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-image: url("nature.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 10px;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.container{
+  width: 300px;
+  height: 400px;
+  background-color: transparent;
+  backdrop-filter: blur(10px) saturate(180%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius:1rem ;
+}
+h2{
+  font-size: 2rem;
+  padding: 1rem;
+ background: linear-gradient(to left,rgb(33, 155, 255), var(--green) );
+   background-clip: text;
+  color: transparent;
+  text-transform: uppercase;
+  background-clip: text;
+  color: transparent;
+}
+input{
+  color: var(--white);
+  padding:.5rem;
+  border-radius: 1rem;
+  margin: 0 auto;
+  font-weight: 900;
+  border: 0;
+  outline: 0;
+  background:transparent;
+  border: 1px solid var(--white);
+}
+textarea{
+ width: 13rem;
+ height: 5rem;
+ padding: 1rem;
+  border-radius: 1rem;
+  margin: 0 auto;
+  background:transparent;
+  border: 1px solid var(--white);
+  color: var(--white);
+ outline: 0;
+}
+button{
+  width: 6rem;
+  height: 2rem;
+  margin: 1rem auto;
+  border-radius: 0.5rem;
+  border: 1px solid white;
+  background:transparent;
+ transform: translateX(60%);
+ cursor: pointer;
+ color: var(--white);
+ font-weight: 900;
+ 
+}
+button a{
+  text-decoration: none;
+  color: var(--white);
+}
+button:active{
+  /* width: 5rem;
+ height: 1.8rem;
+ transform: translateX(80%);
+  border: 1px solid var(--white);
+  font-weight: 300; */
+  box-shadow:1px 1px 1px  rgba(255, 255, 255, 0.13)inset,
+  -1px -1px 1px  rgb(255, 255, 255) inset;
+  font-weight: 500;
+  
+}
+
+/* Navbar *//* Navbar *//* Navbar *//* Navbar *//* Navbar *//* Navbar *//* Navbar *//* Navbar *//* Navbar *//* Navbar *//* Navbar *//* Navbar *//* Navbar *//* Navbar */
+
+.nav{
+  width: 40vw;
+  height: 8vh;
+  position: absolute;
+  backdrop-filter: blur(20px);
+  border: 1px solid var(--light-pink);
+  /* border: 1px solid rgb(9, 223, 134); */
+  box-shadow: inset 38px 29px 23px -11px rgba(255, 255, 255, 0.3),
+ 3px 3px 5px rgba(0, 0, 0);
+ /* color: var(--red); */
+  border-radius: 10px;
+  bottom: 5px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  display:flex;
+  align-items: center;
+}
+.nav ul {
+  display: flex;
+  margin:0 auto ;
+  
+}
+.nav ul li{
+  list-style-type:none;
+  text-transform: uppercase;
+  padding: 0 1rem;
+}
+.nav ul li a{
+  text-decoration: none;
+  cursor: pointer;
+}
+.nav ul li a:visited{
+  color: var(--green);
+}

@@ -1,0 +1,199 @@
+:root{
+  --light-pink:#d38c8c;
+  --green:rgb(9, 223, 134);
+  --red:rgb(245, 109, 109);
+  --white:rgb(255, 255, 255);
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  position: relative;
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* navbar *//* navbar *//* navbar *//* navbar *//* navbar *//* navbar *//* navbar *//* navbar *//* navbar *//* navbar *//* navbar *//* navbar *//* navbar *//* navbar */
+.nav{
+  width: 40vw;
+  height: 8vh;
+  position: fixed;
+  bottom: 0;
+  right: 30%;
+  backdrop-filter: blur(30px);
+  border: 1px solid var(--light-pink);
+  /* border: 1px solid rgb(9, 223, 134); */
+  box-shadow: inset 38px 29px 23px -11px rgba(255, 255, 255, 0.3),
+ 3px 3px 5px rgba(0, 0, 0);
+ /* color: var(--red); */
+  border-radius: 10px;
+  bottom: 5px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  display:flex;
+  align-items: center;
+}
+.nav ul {
+  display: flex;
+  margin:0 auto ;
+  
+}
+.nav ul li{
+  list-style-type:none;
+  text-transform: uppercase;
+  padding: 0 1rem;
+}
+.nav ul li a{
+  text-decoration: none;
+  cursor: pointer;
+  font-family: 'Gill Sans', 'Gill Sans MT',  'Trebuchet MS', sans-serif;
+}
+.nav ul li a:visited{
+  color: var(--red);
+}
+.icon{
+  display: none;
+}
+.fa-xmark{
+  display: none;
+}
+
+
+/* section1 *//* section1 *//* section1 *//* section1 *//* section1 *//* section1 *//* section1 *//* section1 *//* section1 *//* section1 *//* section1 *//* section1 */
+.section1{
+  height: 100%;
+  width: 100%;
+  background-image: url("word.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.container:first-child{
+  width: 470px;
+  height: 330px;
+  border-radius: 15px;
+  position: absolute;
+ top: 100px;
+left: 50px;
+ display: flex;
+ justify-content: center;
+ flex-direction: column;
+}
+.container:last-child{
+  width: 470px;
+  height: 330px;
+  border-radius: 15px;
+  position: absolute;
+ bottom: 100px;
+ right: 50px;
+ display: flex;
+ justify-content: center;
+ flex-direction: column;
+}
+
+
+.project:first-child{
+  width: 430px;
+  height: 250px;
+  border-radius: 15px;
+  background-color: transparent;
+  margin: 0 auto;
+  backdrop-filter: blur(15px);
+  position: relative;
+}
+.video{
+  position: absolute;
+  width: 450px;
+  height: 250px;
+  top: 0px;
+  left: 0px;
+  display: none; 
+}
+.btn{
+  width: 40%;
+  height: 13%;
+  border-radius: 1000px;
+  font-size: 15px;
+  backdrop-filter: blur(30px);
+  border:1px solid white;
+  text-transform: uppercase;
+  background: linear-gradient(to right, rgba(54, 247, 221, 0.932), yellow) ;
+ background-clip: text;
+ color: transparent;
+ font-weight: 900;
+ margin: auto;
+cursor: pointer;
+}
+button:active{
+  box-shadow:5px 5px 5px  rgba(255, 255, 255, 0.13)inset,
+  -5px -5px 5px  rgb(255, 255, 255) inset;
+  font-weight: 500;
+  
+}
+
+.project:last-child{
+  width: 430px;
+  height: 250px;
+  border-radius: 15px;
+  position: absolute;
+  bottom: 100px;
+  right: 50px;
+  background-color: transparent;
+  backdrop-filter: blur(15px) saturate(180%);
+ 
+}
+.project h1{
+  font-size: 2rem;
+  background: linear-gradient(to right, rgba(54, 247, 221, 0.932), yellow) ;
+  background-clip: text;
+  color: transparent;
+  text-align: center;
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+padding-top: 15px;
+}
+.project p{
+  font-size: 1rem;
+  /* background: linear-gradient(to right, rgba(54, 247, 221, 0.932), yellow) ;
+  background-clip: text; */
+  color: white;
+  text-align: center;
+font-family:'Gill Sans', 'Gill Sans MT',  'Trebuchet MS', sans-serif;
+padding: 15px  10px;
+}
+
+.project:hover{
+.video{
+  display: block;
+  }
+}
+
+/* section2 *//* section2 *//* section2 *//* section2 *//* section2 *//* section2 *//* section2 *//* section2 *//* section2 *//* section2 *//* section2 *//* section2 */
+.section2{
+  height: 100vh;
+  width: 100vw;
+  background-image: url("work.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+/* section3 *//* section3 *//* section3 *//* section3 *//* section3 *//* section3 *//* section3 *//* section3 *//* section3 *//* section3 *//* section3 *//* section3 */
+.section3{
+  height: 100vh;
+  width: 100vw;
+  background-image: url("free.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+
